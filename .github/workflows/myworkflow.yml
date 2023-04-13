@@ -3,15 +3,10 @@ name: simplilearn workflow
 on: push
 
 jobs:
-  my-job:
-    name: My Job
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Simplilearn file demo print
-        env:
-          MY_VAR: Hi there! This is sample
-          FIRST_NAME: file
-          MIDDLE_NAME: of
-          LAST_NAME: GithubAction
-        run: |
-          echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+      # This step checks out a copy of your repository.
+      - uses: actions/checkout@v3
+      # This step references the directory that contains the action.
+      - uses: ./.github/actions/hello-world-action
