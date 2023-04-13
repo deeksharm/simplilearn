@@ -7,7 +7,7 @@ jobs:
     name: My Job
     runs-on: ubuntu-latest
     steps:
-      - name: Print a greeting
+      - name: Simplilearn file demo print
         env:
           MY_VAR: Hi there! This is sample
           FIRST_NAME: file
