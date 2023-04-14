@@ -1,0 +1,15 @@
+name: 'My Action'
+description: 'An example GitHub Action'
+
+inputs:
+  my-input:
+    description: 'An example input'
+    required: true
+
+outputs:
+  my-output:
+    description: 'An example output'
+
+runs:
+  using: 'docker'
+  image: Dockerfile
